@@ -20,6 +20,6 @@ public class ListSuccessTests {
 
     @Test
     void testAddEmployee(Employee myEmployee){
-        assertTrue(listOfEmployees.contains(myEmployee));
+        assertEquals(listOfEmployees.size(), listOfEmployees.getSize() + 1);
     }
 }
