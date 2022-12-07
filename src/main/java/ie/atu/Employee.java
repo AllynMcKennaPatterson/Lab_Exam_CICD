@@ -5,8 +5,8 @@ public class Employee {
     private String number;
 
     public Employee(String employeeName, String employeeNumber) {
-        setName(employeeName);
-        setNumber(employeeNumber);
+        setEmployeeName(employeeName);
+        setEmployeeNumber(employeeNumber);
     }
 
     public String getEmployeeName() {
@@ -17,7 +17,7 @@ public class Employee {
         return number;
     }
 
-    public void setName(String name) {
+    public void setEmployeeName(String name) {
         if(name.length() >= 5){
             this.name = name;
         }
@@ -26,7 +26,7 @@ public class Employee {
         }
     }
 
-    public void setNumber(String number) {
+    public void setEmployeeNumber(String number) {
         if(number.length() != 12){
             this.number = number;
         }
