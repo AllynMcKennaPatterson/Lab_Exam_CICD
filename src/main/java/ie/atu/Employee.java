@@ -4,7 +4,10 @@ public class Employee {
     private String name;
     private String number;
 
-
+    public Employee(String employeeName, String employeeNumber) {
+        setName(employeeName);
+        setNumber(employeeNumber);
+    }
 
     public String getName() {
         return name;
