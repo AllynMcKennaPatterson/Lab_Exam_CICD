@@ -27,4 +27,9 @@ public class ListSuccessTests {
     void testDeleteEmployee(Employee myEmployee){
         assertEquals(listOfEmployees.size(), listOfEmployees.getListSize() - 1);
     }
+
+    @Test
+    void testListSizeEmployee(Employee myEmployee){
+        assertEquals(listOfEmployees.getListSize(), listOfEmployees.size());
+    }
 }
