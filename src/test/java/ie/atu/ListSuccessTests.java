@@ -20,16 +20,17 @@ public class ListSuccessTests {
 
     @Test
     void testAddEmployee(Employee myEmployee){
-        assertEquals(listOfEmployees.size(), listOfEmployees.getListSize() + 1);
+        int initialSize;
+        initialSize = listOfEmployees.size();
+        listOfEmployees.add(myEmployee);
+        assertEquals(listOfEmployees.size(), initialSize + 1);
     }
 
     @Test
     void testDeleteEmployee(Employee myEmployee){
-        assertEquals(listOfEmployees.size(), listOfEmployees.getListSize() - 1);
-    }
-
-    @Test
-    void testListSizeEmployee(Employee myEmployee){
-        assertEquals(listOfEmployees.getListSize(), listOfEmployees.size());
+        int initialSize;
+        initialSize = listOfEmployees.size();
+        listOfEmployees.remove(myEmployee);
+        assertEquals(listOfEmployees.size(), initialSize - 1);
     }
 }
