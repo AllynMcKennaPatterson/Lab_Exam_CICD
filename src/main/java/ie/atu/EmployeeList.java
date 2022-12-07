@@ -16,6 +16,15 @@ public class EmployeeList {
         }
     }
 
+    void deleteEmployee(Employee newEmployee){
+        if(listOfEmployees.contains(newEmployee.getEmployeeNumber()) == true){
+            listOfEmployees.remove(newEmployee);
+        }
+        else{
+            throw new IllegalArgumentException("No matching Employee is found");
+        }
+    }
+
     public int getListSize(){
         return listOfEmployees.size();
     }
