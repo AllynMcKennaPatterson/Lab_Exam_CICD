@@ -10,7 +10,7 @@ public class EmployeeSuccessTests {
 
     @BeforeEach
     void setUp(){
-        myEmployee = new Employee("Allyn", 123456712341);
+        myEmployee = new Employee("Allyn", "123456712341");
     }
 
     @Test
@@ -20,6 +20,6 @@ public class EmployeeSuccessTests {
 
     @Test
     void testNumber(){
-        assertEquals(123456712341, myEmployee.getEmployeeNumber());
+        assertEquals("123456712341", myEmployee.getEmployeeNumber());
     }
 }

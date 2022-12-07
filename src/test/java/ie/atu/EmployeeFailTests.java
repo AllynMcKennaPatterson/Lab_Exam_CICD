@@ -8,13 +8,13 @@ public class EmployeeFailTests {
 
     @Test
     void testNameFail(){
-        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> new Employee("Al", 123456712341));
+        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> new Employee("Al", "123456712341"));
         assertEquals("Error: Employee name must have a minimum of 5 characters", exMessage.getMessage());
     }
 
     @Test
     void testNumberFail(){
-        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> new Employee("Allyn", 123456712));
+        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> new Employee("Allyn", "123456712"));
         assertEquals("Error: Employee name must be a unique 12 digit number", exMessage.getMessage());
     }
 }
