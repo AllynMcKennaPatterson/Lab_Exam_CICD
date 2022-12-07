@@ -9,11 +9,11 @@ public class Employee {
         setNumber(employeeNumber);
     }
 
-    public String getName() {
+    public String getEmployeeName() {
         return name;
     }
 
-    public String getNumber() {
+    public String getEmployeeNumber() {
         return number;
     }
 
