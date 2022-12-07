@@ -27,7 +27,7 @@ public class Employee {
     }
 
     public void setEmployeeNumber(String number) {
-        if(number.length() != 12){
+        if(number.length() == 12){
             this.number = number;
         }
         else{
