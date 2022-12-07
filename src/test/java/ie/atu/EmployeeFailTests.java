@@ -14,7 +14,7 @@ public class EmployeeFailTests {
 
     @Test
     void testNumberFail(){
-        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> new Employee("Allyn", "123456712"));
+        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> new Employee("Allyn", "12345"));
         assertEquals("Error: Employee name must be a unique 12 digit number", exMessage.getMessage());
     }
 }
