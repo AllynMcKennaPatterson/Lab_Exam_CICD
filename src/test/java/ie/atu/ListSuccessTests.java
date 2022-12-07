@@ -22,4 +22,9 @@ public class ListSuccessTests {
     void testAddEmployee(Employee myEmployee){
         assertEquals(listOfEmployees.size(), listOfEmployees.getListSize() + 1);
     }
+
+    @Test
+    void testDeleteEmployee(Employee myEmployee){
+        assertEquals(listOfEmployees.size(), listOfEmployees.getListSize() - 1);
+    }
 }
