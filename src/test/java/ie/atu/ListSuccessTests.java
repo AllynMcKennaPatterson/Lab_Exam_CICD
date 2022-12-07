@@ -20,6 +20,6 @@ public class ListSuccessTests {
 
     @Test
     void testAddEmployee(Employee myEmployee){
-        assertEquals(listOfEmployees.size(), listOfEmployees.getSize() + 1);
+        assertEquals(listOfEmployees.size(), listOfEmployees.getListSize() + 1);
     }
 }

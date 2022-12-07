@@ -15,4 +15,8 @@ public class EmployeeList {
             throw new IllegalArgumentException("Duplicate Employee details found, no object added");
         }
     }
+
+    public int getListSize(){
+        return listOfEmployees.size();
+    }
 }
